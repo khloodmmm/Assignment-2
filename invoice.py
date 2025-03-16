@@ -3,8 +3,6 @@ class Invoice:
 
     def __init__(self, invoice_id: int, booking: 'Booking'):
         # Initialize an Invoice object.
-        #
-        # Parameters:
         # - invoice_id: Unique identifier for the invoice (e.g., 1).
         # - booking: Booking object associated with the invoice.
         self._invoice_id = invoice_id  # Private attribute for invoice ID
@@ -44,4 +42,4 @@ class Invoice:
     def __str__(self) -> str:
         # Returns a string representation of the Invoice object.
         return (f"Invoice ID: {self._invoice_id}, Booking ID: {self._booking.get_booking_id()}, "
-                f"Total Amount: ${self.calculate_total_amount()}")
+                f"Total Amount: AED{self.calculate_total_amount()}")
