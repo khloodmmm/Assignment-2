@@ -5,8 +5,6 @@ class Guest:
 
     def __init__(self, guest_id: int, name: str, contact_info: str):
         # Initialize a Guest object.
-        #
-        # Parameters:
         # - guest_id: Unique identifier for the guest (e.g., 1).
         # - name: Name of the guest (e.g., John Doe).
         # - contact_info: Contact information of the guest (e.g., john.doe@example.com).
