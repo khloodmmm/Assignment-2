@@ -43,5 +43,5 @@ class Room:
     def __str__(self) -> str:
         # Returns a string representation of the Room object.
         return (f"Room Number: {self._room_number}, Type: {self._room_type}, "
-                f"Amenities: {', '.join(self._amenities)}, Price/Night: ${self._price_per_night}, "
+                f"Amenities: {', '.join(self._amenities)}, Price/Night: AED{self._price_per_night}, "
                 f"Available: {self._availability_status}")
