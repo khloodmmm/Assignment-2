@@ -63,4 +63,4 @@ class Booking:
         # Returns a string representation of the Booking object.
         return (f"Booking ID: {self._booking_id}, Guest: {self._guest.get_name()}, "
                 f"Room: {self._room.get_room_number()}, Check-In: {self._check_in_date}, "
-                f"Check-Out: {self._check_out_date}, Total Cost: ${self._total_cost}")
+                f"Check-Out: {self._check_out_date}, Total Cost: AED{self._total_cost}")
