@@ -1,13 +1,11 @@
-from booking import Booking
-
 class Guest:
     # Represents a guest staying at the hotel.
 
     def __init__(self, guest_id: int, name: str, contact_info: str):
         # Initialize a Guest object.
         # - guest_id: Unique identifier for the guest (e.g., 1).
-        # - name: Name of the guest (e.g., John Doe).
-        # - contact_info: Contact information of the guest (e.g., john.doe@example.com).
+        # - name: Name of the guest (e.g., Khlood Mohamed).
+        # - contact_info: Contact information of the guest (e.g., khlood.mohamed@hotmail.com).
         self._guest_id = guest_id  # Private attribute for guest ID
         self._name = name  # Private attribute for guest name
         self._contact_info = contact_info  # Private attribute for contact info
@@ -35,7 +33,7 @@ class Guest:
         # Sets the guest's loyalty status.
         self._loyalty_status = status
 
-    def add_reservation(self, booking: Booking) -> None:
+    def add_reservation(self, booking: 'Booking') -> None:
         # Adds a booking to the guest's reservation history.
         self._reservation_history.append(booking)
 
