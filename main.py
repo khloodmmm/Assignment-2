@@ -13,7 +13,7 @@ room = Room(2002, "Double", ["Table", "TV", "Fridge"], 400.0)
 guest = Guest(1, "Khlood Mohamed", "Khlood.mohamed@hotmail.com")
 
 # Create a booking
-booking = Booking(1002, guest, room, "2025-03-15", "2025-03-17")
+booking = Booking(1, guest, room, "2025-03-15", "2025-03-17")
 
 # Add booking to guest's reservation history
 guest.add_reservation(booking)
@@ -32,7 +32,7 @@ service_request = ServiceRequest(1001, guest, "Room Service")
 service_request.set_request_status("Completed")
 
 # Create feedback
-feedback = Feedback(1001, guest, 5, "Very good")
+feedback = Feedback(1, guest, 5, "Very good")
 
 # Display details
 print(room)
@@ -42,3 +42,4 @@ print(invoice)
 print(loyalty_program)
 print(service_request)
 print(feedback)
+
