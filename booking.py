@@ -7,8 +7,6 @@ class Booking:
 
     def __init__(self, booking_id: int, guest: Guest, room: Room, check_in_date: str, check_out_date: str):
         # Initialize a Booking object.
-        #
-        # Parameters:
         # - booking_id: Unique identifier for the booking (e.g., 1).
         # - guest: Guest object making the booking.
         # - room: Room object being booked.
